@@ -1,6 +1,7 @@
 @media only screen and (max-width: 414px) {
     * {
-        overflow: hidden;
+        max-width: 828px;
+        overflow-x: hidden;
     }
 
     header {
@@ -19,8 +20,18 @@
     /*nav*/
 
     .poster {
-        margin-top: -21.8em;
+        background-image: url('media/IMG_5927.JPG'); 
+        height: 32em;
+        margin-top: -5.3em;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
+
+    .backgroundVideo {
+        display: none;
+    }
+
 
     .linearOne
     .linearTwo {
@@ -28,16 +39,18 @@
     }
 
     .title {
-        margin-top: 24em;
-        margin-left: -2em;
+        margin-top: -14em;
+        margin-left: 1em;
+        font-size: .4em;
     }
 
-    .title h1 {
-        margin-left: 1.5em;
-        font-size: 1.2em;
+    .info {
+        font-size: 2em;
+        margin-left: .2em;
+        margin-top: 1em;
+        opacity: .4;
     }
 
-    .info,
     .overview,
     .starring,
     .creator {
@@ -47,20 +60,38 @@
     .linearThree {
         max-width: 414px;
         height: 10em;
-        margin-top: 22em;
+        margin-top: -6em;
         background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.2) 6%, rgba(0, 0, 0, 0.4) 12%, rgba(0, 0, 0, 0.6) 18%, black 60%);
     }
 
     /*synopsis*/
 
     .synopsis {
-        margin-top: 32em;
+        margin-top: 1em;
+        height:36em;
+        overflow: hidden;
+    }
+
+    .synopsis h1 {
+        font-size: 2em;
+        margin-left: .8em;
+        margin-top: 1em;
+    }
+
+    .synopsisBody { 
+        max-width: 31em;
+        position: absolute;
+        margin-left: -97.5em;
+        margin-top: -6em;
+        font-size: .7em;
+        text-align: justify;
     }
 
     #synopsisImage {
-        height: 14em;
+        height: 22em;
         margin-left: 2em;
-        margin-top: -52em;
+        margin-top: -14em;
+        position: absolute;
     }
 
 
