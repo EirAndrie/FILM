@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display SC" serif;
+}
+
+header {
+    padding-top: 1em;
+}
+
+.logo img {
+    height: 4em;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: 10em;
+    margin-top: -4em;
+}
+
+/*hamburger menu*/
+
+nav {
+    display: flex;
+    margin-left: 78em;
+    padding: 1em;
+    max-width: 32em;
+    justify-content: space-between;
+}
+
+li {
+    font-family: "Merriweather", serif;
+    cursor: pointer;
+    list-style-type: none;
+    border-radius: 1em;
+    opacity: 0.6;
+    padding: 1em;
+    color: whitesmoke;
+    text-shadow: 5px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.title {
+    z-index: 10;
+    max-width: 64em;
+    padding: 2em;
+    position: absolute;
+    margin-left: 8rem;
+    margin-top: 20em;
+}
+
+.title h1 {
+    cursor: default;
+    font-size: 5em;
+    color: whitesmoke;
+    opacity: 0.7;
+    text-shadow: 5px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.info {
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    color: whitesmoke;
+    opacity: 0.7;
+    text-shadow: 5px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.overview {
+    font-family: "Merriweather", serif;
+    font-size: 28px;
+    color: whitesmoke;
+    opacity: 0.7;
+    text-shadow: 5px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.starring {
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    color: whitesmoke;
+    opacity: 0.7;
+    text-shadow: 5px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.creator {
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    color: whitesmoke;
+    opacity: 0.7;
+    text-shadow: 5px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.red-text {
+    color: red;
+}
+
+/*main pic*/
+
+.linearOne {
+    margin-top: -8.5em;
+    width: 78em;
+    height: 110vh;
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(to left, transparent 60%, black 115%);
+}
+
+.poster video {
+    height: 110vh;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    margin-top: -8.5rem;
+}
+
+.linearTwo {
+    margin-left: 44em;
+    margin-top: -8.5em;
+    width: 78em;
+    height: 110vh;
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(to right, transparent 60%, black 115%);
+}
+
+.linearThree {
+    margin-top: 50vh;
+    position: absolute;
+    width: 100%;
+    height: 40em;
+    background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.2) 4%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.6) 18%, black 58%);
+}
+
+/*synopsis*/
+
+.synopsis {
+    margin-top: 100vh;
+    height: 100vh;
+    max-width: 100%;
+    border: solid;
+    background-color: black;
+}
+
+.synopsis h1 {
+    margin-top: 3em;
+    color: whitesmoke;
+    opacity: .8;
+    margin-left: 15.5em;
+    font-size: 5em;
+}
+
+.body {
+    max-width: 40em;
+    margin-left: 70em;
+}
+
+.synopsisBody {
+    font-family: "Merriweather", serif;
+    opacity: .8;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*synopsis image*/
+
+#synopsisImage {
+    z-index: 100;
+    height: 48em;
+    position: absolute;
+    margin-top: -52em;
+    margin-left: 10em;
+    border-radius: 4px;
+}
+
+/*trailer*/
+
+.linearFour {
+    z-index: 10;
+    margin-top: -15em;
+    position: absolute;
+    width: 100%;
+    height: 40em;
+    background-image: linear-gradient(to top, transparent , rgba(0, 0, 0, 0.2) 3.5%, rgba(0, 0, 0, 0.4) 7.5%, rgba(0, 0, 0, 0.6) 15%, black 24%);
+}
+
+.lineTop {
+    position: absolute;
+    z-index: 200;
+    width: 84%;
+    border-top: 1px solid rgba(245, 245, 245, 0.6);
+    margin-top: 28em;
+    margin-left: 9em;
+}
+
+.trailerMovie h1 {
+    cursor: default;
+    z-index: 200;
+    position: absolute;
+    margin-top: -7em;
+    margin-left: 1.8em;
+    font-size: 6em;
+    color: whitesmoke;
+    opacity: .8;
+}
+
+.desc {
+    cursor: default;
+    z-index: 200;
+    position: absolute;
+    margin-top: -30em;
+    margin-left: 9.8em;
+    font-size: 18px;
+    color: whitesmoke;
+    opacity: .8;
+    font-family: "Merriweather", serif;
+}
+
+.trailerItself {
+    margin-top: -50em;
+    position: absolute;
+    margin-left: 54em;
+}
+
+.trailerItself:hover video {
+    transform:  scale(1.2);
+}
+
+.trailerItself video {
+    height: 32em;
+    width: 54em;
+    z-index: 100;
+    transition: transform 0.8s ease;
+    position: absolute;
+}
+
+.trailerBackground img {
+    margin-top: 16em;
+    height: 68em;
+}
+.trailerMovie {
+    height: 120vh;
+    background-color: white;
+}
+
+.glassEffect {
+    margin-top: 1em;
+    position: absolute;
+    width: 100%; 
+    height: 130vh; 
+    background: rgba(0, 0, 0, 0.74);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    padding: 20px;
+}
+
+.lineBottom {
+    position: absolute;
+    z-index: 200;
+    width: 84%;
+    border-top: 1px solid rgba(245, 245, 245, 0.6);
+    margin-top: -12em;
+    margin-left: 9em;
+}
+
+.linearFive {
+    z-index: 99;
+    margin-top: -6em;
+    position: absolute;
+    width: 100%;
+    height: 26em;
+    background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.2) 6%, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.6) 18%, black 58%);
+}
+
+/*Cast*/
+
+.cast {
+    height: 90vh;
+    margin-top: 20em;
+    position: relative;
+}
+
+/*backgroundImage*/
+
+.backgroundImage {
+    z-index: -100;
+    position: absolute
+}
+
+.item {
+    position: absolute;
+}
+
+.backgroundImage h1{
+    font-family: "Merriweather", serif;
+    color: maroon;
+    opacity: .8;
+    text-shadow: 5px 2px 10px rgba(0, 0, 0, .9);
+    position: absolute;
+    font-size: 2em;
+    margin-top: -16.5em;
+    margin-left: 5.8em;
+}
+
+.backgroundImage p {
+    margin-top: -6em;
+    margin-left: 2.3em;
+    font-size: 5em;
+    color: whitesmoke;
+    opacity: 1;
+    text-shadow: 5px 2px 10px rgba(0, 0, 0, .9);
+}
+
+/*Button*/
+
+.buttons {
+    z-index: 100;
+    position: absolute;
+}
+
+#prev {
+    position: absolute;
+    margin-top: 52.5em;
+    margin-left: 8em;
+    height: 22em;
+    width: 5em;
+    border: none;
+    background-color: whitesmoke;
+    opacity: .06;
+    outline: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+#prev:hover {
+    background-color: rgb(255, 254, 254);
+    opacity: .1;
+    transform: scale(1.02);
+}
+
+#next {
+    position: absolute;
+    margin-top: 52.5em;
+    margin-left: 128em;
+    height: 22em;
+    width: 5em;
+    border: none;
+    background-color: whitesmoke;
+    opacity: 0.2;
+    outline: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+#next:hover {
+    background-color: rgb(255, 254, 254);
+    opacity: .09;
+    transform: scale(1.02);
+}
+
+/*Thumbnail*/
+
+.thumbNail {
+    margin-left: 11.5em;
+    z-index: 100;
+}
+
+.container {
+    display: flex;
+    width: 110em;
+    justify-content: space-between;
+}
+
+.itemThumbnail {
+    margin-top: 44em;
+    width: 15em;
+    height: 18em;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: transform 0.4s ease-in-out ;
+}
+
+.itemThumbnail:hover {
+    transform: scale(1.05);
+}
+
+
+.itemThumbnail img {
+    height: 26em;
+    margin-left: -1em;
+    filter: grayscale(60%);
+    transition: filter .4s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.itemThumbnail img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+
+
+.linearSeven {
+    background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.1) 2%, rgba(0, 0, 0, 0.4) 8%, rgba(0, 0, 0, 0.8) 30%, black 50%);
+    height: 50vh;
+    width: 100%;
+    z-index: 100;
+    margin-top: -27em;
+}
